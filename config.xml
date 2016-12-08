@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<widget id="com.ionicframework.myapp2461287" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>myApp2</name>
+  <description>An awesome Ionic/Cordova app.</description>
+  <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
+  <content src="index.html"/>
+  <access origin="*"/>
+  <allow-intent href="http://*/*"/>
+  <allow-intent href="https://*/*"/>
+  <allow-intent href="tel:*"/>
+  <allow-intent href="sms:*"/>
+  <allow-intent href="mailto:*"/>
+  <allow-intent href="geo:*"/>
+  <platform name="android">
+    <allow-intent href="market:*"/>
+    <icon src="resources\android\icon\drawable-ldpi-icon.png" density="ldpi"/>
+    <icon src="resources\android\icon\drawable-mdpi-icon.png" density="mdpi"/>
+    <icon src="resources\android\icon\drawable-hdpi-icon.png" density="hdpi"/>
+    <icon src="resources\android\icon\drawable-xhdpi-icon.png" density="xhdpi"/>
+    <icon src="resources\android\icon\drawable-xxhdpi-icon.png" density="xxhdpi"/>
+    <icon src="resources\android\icon\drawable-xxxhdpi-icon.png" density="xxxhdpi"/>
+    <splash src="resources\android\splash\drawable-land-ldpi-screen.png" density="land-ldpi"/>
+    <splash src="resources\android\splash\drawable-land-mdpi-screen.png" density="land-mdpi"/>
+    <splash src="resources\android\splash\drawable-land-hdpi-screen.png" density="land-hdpi"/>
+    <splash src="resources\android\splash\drawable-land-xhdpi-screen.png" density="land-xhdpi"/>
+    <splash src="resources\android\splash\drawable-land-xxhdpi-screen.png" density="land-xxhdpi"/>
+    <splash src="resources\android\splash\drawable-land-xxxhdpi-screen.png" density="land-xxxhdpi"/>
+    <splash src="resources\android\splash\drawable-port-ldpi-screen.png" density="port-ldpi"/>
+    <splash src="resources\android\splash\drawable-port-mdpi-screen.png" density="port-mdpi"/>
+    <splash src="resources\android\splash\drawable-port-hdpi-screen.png" density="port-hdpi"/>
+    <splash src="resources\android\splash\drawable-port-xhdpi-screen.png" density="port-xhdpi"/>
+    <splash src="resources\android\splash\drawable-port-xxhdpi-screen.png" density="port-xxhdpi"/>
+    <splash src="resources\android\splash\drawable-port-xxxhdpi-screen.png" density="port-xxxhdpi"/>
+
+    <preference name="android-minSdkVersion" value="16" />
+  </platform>
+  <platform name="ios">
+    <allow-intent href="itms:*"/>
+    <allow-intent href="itms-apps:*"/>
+  </platform>
+  <preference name="webviewbounce" value="false"/>
+  <preference name="UIWebViewBounce" value="false"/>
+  <preference name="DisallowOverscroll" value="true"/>
+  <preference name="android-minSdkVersion" value="16"/>
+  <preference name="BackupWebStorage" value="none"/>
+  <preference name="SplashMaintainAspectRatio" value="true"/>
+  <preference name="FadeSplashScreenDuration" value="300"/>
+  <preference name="SplashScreen" value="screen"/>
+  <preference name="SplashScreenDelay" value="3000"/>
+
+  <!-- Urban Airship app credentials -->
+  <preference name="com.urbanairship.production_app_key" value="Your Production App Key" />
+  <preference name="com.urbanairship.production_app_secret" value="Your Production App Secret" />
+  <preference name="com.urbanairship.development_app_key" value="QTcwE5UyQ4iVILJlLRLLkA" />
+  <preference name="com.urbanairship.development_app_secret" value="JcvR6BWRT9-ZoaftHzacJQ" />
+
+  <!-- Required for Android. -->
+  <preference name="com.urbanairship.gcm_sender" value="1078719353520-0j4pj9jjft26ntcdta0g0jolcamsepvk.apps.googleusercontent.com" />
+
+  <!-- If the app is in production or not -->
+  <preference name="com.urbanairship.in_production" value="true | false" />
+
+  <!-- Optional config values -->
+
+  <!-- Enable push when the application launches -->
+  <preference name="com.urbanairship.enable_push_onlaunch" value="true | false" />
+
+  <!-- Enable Analytics when the application launches -->
+  <!-- Warning: Features that depend on analytics being enabled may not work properly if analytics is disabled (reports, location segmentation, region triggers, push to local time). -->
+  <preference name="com.urbanairship.enable_analytics" value="true | false" />
+
+  <!-- Override the Android notification icon -->
+  <preference name="com.urbanairship.notification_icon" value="ic_notification" />
+
+  <!-- Override the Android notification large icon -->
+  <preference name="com.urbanairship.notification_large_icon" value="ic_notification_large" />
+
+  <!-- Override the Android notification sound (sound file should be in res/raw)-->
+  <preference name="com.urbanairship.notification_sound" value="push" />
+
+  <!-- Specify the notification accent color for Android API 21+ (Lollipop) -->
+  <preference name="com.urbanairship.notification_accent_color" value="#0000ff" />
+
+  <!-- Clear the iOS badge on launch -->
+  <preference name="com.urbanairship.clear_badge_onlaunch" value="true | false" />
+
+  <!-- iOS 10 alert foreground notification presentation option -->
+  <preference name="com.urbanairship.ios_foreground_notification_presentation_alert" value="true"/>
+
+  <!-- iOS 10 badge foreground notification presentation option -->
+  <preference name="com.urbanairship.ios_foreground_notification_presentation_badge" value="true"/>
+
+  <!-- iOS 10 sound foreground notification presentation option -->
+  <preference name="com.urbanairship.ios_foreground_notification_presentation_sound" value="true"/>
+
+
+  <feature name="StatusBar">
+    <param name="ios-package" onload="true" value="CDVStatusBar"/>
+  </feature>
+  <icon src="resources\android\icon\drawable-xhdpi-icon.png"/>
+</widget>
